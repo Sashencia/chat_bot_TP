@@ -11,7 +11,7 @@ def create_style_retriever():
     documents = loader.load()
     
     # Делим
-    text_splitter = CharacterTextSplitter(chunk_size=300, chunk_overlap=0)
+    text_splitter = CharacterTextSplitter(chunk_size=800, chunk_overlap=0)
     chunks = text_splitter.split_documents(documents)
     
     # Эмбеддинги — локальные, без API

@@ -62,7 +62,7 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
         history_messages_key="chat_history",
     )
 
-    # ✅ Показываем "печатает"
+    # Показываем "печатает"
     await update.message.chat.send_chat_action("typing")
 
     try:
